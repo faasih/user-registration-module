@@ -1,5 +1,3 @@
-// import { logoutCall } from "./authService";
-
 export const Auth = {
   getAuth() {
     let response = false;
@@ -11,6 +9,6 @@ export const Auth = {
 };
 
 export function logout() {
-  //   logoutCall();    
   localStorage.clear();
+  window.location.reload();
 }

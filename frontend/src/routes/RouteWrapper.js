@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Navigate, Outlet, useNavigate } from "react-router-dom";
+
 import { APP_ROUTES } from "../resources/constants";
 
 import { Auth } from "./Auth";
@@ -11,11 +12,11 @@ export const ProtectedRoutes = () => {
 
   useEffect(() => {
     if (!auth) {
-      navigation(APP_ROUTES.SING_IN);
+      navigation(APP_ROUTES.DEFAULT);
     }
   }, [auth]);
 
-  return auth ? <Outlet /> : <Navigate to={APP_ROUTES.SING_IN} />;
+  return auth ? <Outlet /> : <Navigate to={APP_ROUTES.DEFAULT} />;
 };
 
 export const PublicRoutes = () => {
