@@ -5,7 +5,6 @@ export const resources_EN = {
 
   EMAIL_LABEL: "Email Address",
   EMAIL_REQUIRED_MSG: "Email Address is required",
-  EMAIL_REQUIRED_MSG: "Please provide a valid email address.",
   VALID_EMAIL_MSG: "Please provide a valid email address.",
 
   PASSWORD_LABEL: "Password",
