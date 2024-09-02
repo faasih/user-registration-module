@@ -1,0 +1,40 @@
+.welcomeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+.welcomeCard {
+  width: 100%;
+  max-width: 450px;
+  min-width: 450px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.welcomeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.welcomeTitle {
+  font-size: 2.5rem;
+  color: #ff6f61;
+}
+
+.welcomeDetails {
+  color: #595959;
+  font-size: 1.1rem;
+}
